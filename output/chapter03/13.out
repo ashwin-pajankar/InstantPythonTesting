@@ -1,0 +1,20 @@
+pi@raspberrypi ~/book/code/chapter03 $ nosetests -v test.test_Module09
+test.test_Module09.test_case01 ... ERROR
+
+======================================================================
+ERROR: test.test_Module09.test_case01
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/usr/local/lib/python2.7/dist-packages/nose/tools/nontrivial.py", line 97, in newfunc
+    result = func(*arg, **kw)
+  File "/home/pi/book/code/chapter03/test/test_Module09.py", line 6, in test_case01
+    time.sleep(.2)
+NameError: global name 'time' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+FAILED (errors=1)
+

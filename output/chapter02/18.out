@@ -1,0 +1,16 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -v test_Module13
+test_case01 (test_Module13.TestClass14) ... ERROR
+
+======================================================================
+ERROR: test_case01 (test_Module13.TestClass14)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module13.py", line 6, in test_case01
+    raise Exception
+Exception
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)
+

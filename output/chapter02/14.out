@@ -1,0 +1,241 @@
+pi@raspberrypi ~/book/code/chapter02 $ python -m unittest discover
+
+Classname : TestClass04
+Running Test Method : test_case01
+.
+Classname : TestClass05
+Running Test Method : test_case01
+.In setUpModule()...
+In setUpClass()...
+
+In setUp()...
+In test_case01()
+In tearDown()...
+.
+In setUp()...
+In test_case02()
+In tearDown()...
+.In tearDownClass()...
+In tearDownModule()...
+
+Running Test Method : test_case01
+We're in custom made function : add
+.
+Running Test Method : test_case02
+.
+Running Test Method : test_case03
+We're in custom made function : add
+F
+Running Test Method : test_case04
+F
+In test_case()
+.
+In test_case1()
+.F
+In test_case3()
+...
+In test_case1()
+.
+In test_case2()
+.
+Running Test Method : test_case01
+.
+Running Test Method : test_case02
+.In setUpModule()...
+Creating object for the class : mymathlib
+In setUpClass()...
+
+In setUp()...
+In test_case01()
+In tearDown()...
+.
+In setUp()...
+In test_case02()
+In tearDown()...
+.In tearDownClass()...
+In tearDownModule()...
+Destroying object for the class : mymathlib
+
+======================================================================
+FAIL: test_case03 (test.test_Module03.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module03.py", line 23, in test_case03
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+
+======================================================================
+FAIL: test_case04 (test.test_Module03.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module03.py", line 28, in test_case04
+    self.assertTrue(isinstance(my_var, int))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_case2 (test.test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module07.py", line 11, in test_case2
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.101s
+
+FAILED (failures=3)
+pi@raspberrypi ~/book/code/chapter02 $ python -m unittest discover -v
+test_case01 (test.test_Module04.TestClass04) ...
+Classname : TestClass04
+Running Test Method : test_case01
+ok
+test_case01 (test.test_Module04.TestClass05) ...
+Classname : TestClass05
+Running Test Method : test_case01
+ok
+In setUpModule()...
+In setUpClass()...
+test_case01 (test.test_Module05.TestClass06) ...
+In setUp()...
+In test_case01()
+In tearDown()...
+ok
+test_case02 (test.test_Module05.TestClass06) ...
+In setUp()...
+In test_case02()
+In tearDown()...
+ok
+In tearDownClass()...
+In tearDownModule()...
+test_case01 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case01
+We're in custom made function : add
+ok
+test_case02 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case02
+ok
+test_case03 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case03
+We're in custom made function : add
+FAIL
+test_case04 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case04
+FAIL
+test_case (test.test_Module06.TestClass07) ...
+In test_case()
+ok
+test_case1 (test.test_Module07.TestClass08) ...
+In test_case1()
+ok
+test_case2 (test.test_Module07.TestClass08) ... FAIL
+test_case3 (test.test_Module07.TestClass08) ...
+In test_case3()
+ok
+test_case01 (test.test_Module01.TestClass01) ... ok
+test_case02 (test.test_Module01.TestClass01) ... ok
+test_case1 (test.test_Module08.TestClass09) ...
+In test_case1()
+ok
+test_case2 (test.test_Module08.TestClass09) ...
+In test_case2()
+ok
+test_case01 (test.test_Module02.TestClass02) ...
+Running Test Method : test_case01
+ok
+test_case02 (test.test_Module02.TestClass02) ...
+Running Test Method : test_case02
+ok
+In setUpModule()...
+Creating object for the class : mymathlib
+In setUpClass()...
+test_case01 (test.test_Module09.TestClass10) ...
+In setUp()...
+In test_case01()
+In tearDown()...
+ok
+test_case02 (test.test_Module09.TestClass10) ...
+In setUp()...
+In test_case02()
+In tearDown()...
+ok
+In tearDownClass()...
+In tearDownModule()...
+Destroying object for the class : mymathlib
+
+======================================================================
+FAIL: test_case03 (test.test_Module03.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module03.py", line 23, in test_case03
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+
+======================================================================
+FAIL: test_case04 (test.test_Module03.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module03.py", line 28, in test_case04
+    self.assertTrue(isinstance(my_var, int))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_case2 (test.test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module07.py", line 11, in test_case2
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.107s
+
+FAILED (failures=3)
+pi@raspberrypi ~/book/code/chapter02 $ python -m unittest discover -vf
+test_case01 (test.test_Module04.TestClass04) ...
+Classname : TestClass04
+Running Test Method : test_case01
+ok
+test_case01 (test.test_Module04.TestClass05) ...
+Classname : TestClass05
+Running Test Method : test_case01
+ok
+In setUpModule()...
+In setUpClass()...
+test_case01 (test.test_Module05.TestClass06) ...
+In setUp()...
+In test_case01()
+In tearDown()...
+ok
+test_case02 (test.test_Module05.TestClass06) ...
+In setUp()...
+In test_case02()
+In tearDown()...
+ok
+In tearDownClass()...
+In tearDownModule()...
+test_case01 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case01
+We're in custom made function : add
+ok
+test_case02 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case02
+ok
+test_case03 (test.test_Module03.TestClass03) ...
+Running Test Method : test_case03
+We're in custom made function : add
+FAIL
+
+======================================================================
+FAIL: test_case03 (test.test_Module03.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module03.py", line 23, in test_case03
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.081s
+
+FAILED (failures=1)
+pi@raspberrypi ~/book/code/chapter02 $
+

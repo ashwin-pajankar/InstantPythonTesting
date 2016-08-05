@@ -1,0 +1,35 @@
+pi@raspberrypi ~/book/code/chapter03 $ nosetests test.test_Module06
+FF
+======================================================================
+FAIL: test.test_Module06.test_case01
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/pi/book/code/chapter03/test/test_Module06.py", line 6, in test_case01
+    assert 2+2 == 5
+AssertionError:
+-------------------- >> begin captured stdout << ---------------------
+In test_case01()...
+
+--------------------- >> end captured stdout << ----------------------
+
+======================================================================
+FAIL: test.test_Module06.test_case02
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/pi/book/code/chapter03/test/test_Module06.py", line 11, in test_case02
+    assert_equals(2+2, 5)
+AssertionError: 4 != 5
+-------------------- >> begin captured stdout << ---------------------
+In test_case02()...
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.011s
+
+FAILED (failures=2)
+

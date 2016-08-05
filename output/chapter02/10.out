@@ -1,0 +1,73 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -v test_Module07
+test_case01 (test_Module07.TestClass08) ...
+In test_case1()
+ok
+test_case02 (test_Module07.TestClass08) ... FAIL
+test_case03 (test_Module07.TestClass08) ...
+In test_case3()
+ok
+
+======================================================================
+FAIL: test_case02 (test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module07.py", line 11, in test_case02
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+FAILED (failures=1)
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -q test_Module07
+
+In test_case1()
+
+In test_case3()
+======================================================================
+FAIL: test_case02 (test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module07.py", line 11, in test_case02
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+FAILED (failures=1)
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -f test_Module07
+
+In test_case1()
+.F
+======================================================================
+FAIL: test_case02 (test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module07.py", line 11, in test_case02
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (failures=1)
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -fv test_Module07test_case01 (test_Module07.TestClass08) ...
+In test_case1()
+ok
+test_case02 (test_Module07.TestClass08) ... FAIL
+
+======================================================================
+FAIL: test_case02 (test_Module07.TestClass08)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module07.py", line 11, in test_case02
+    self.assertTrue('Python'.isupper())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (failures=1)
+pi@raspberrypi ~/book/code/chapter02/test $
+

@@ -1,0 +1,8 @@
+pi@raspberrypi ~/book/code/chapter03 $ python -V
+Python 2.7.3
+pi@raspberrypi ~/book/code/chapter03 $ python --version
+Python 2.7.3
+
+C:\>python -V
+Python 2.7.11
+

@@ -1,0 +1,37 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python test_Module03.py
+test_test01 (__main__.TestClass03) ...
+Running Test Method : test_test01
+We're in custom made function : add
+ok
+test_test02 (__main__.TestClass03) ...
+Running Test Method : test_test02
+ok
+test_test03 (__main__.TestClass03) ...
+Running Test Method : test_test03
+We're in custom made function : add
+FAIL
+test_test04 (__main__.TestClass03) ...
+Running Test Method : test_test04
+FAIL
+
+======================================================================
+FAIL: test_test03 (__main__.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module03.py", line 23, in test_test03
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+
+======================================================================
+FAIL: test_test04 (__main__.TestClass03)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_Module03.py", line 28, in test_test04
+    self.assertTrue(isinstance(my_var, int))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.062s
+
+FAILED (failures=2)
+

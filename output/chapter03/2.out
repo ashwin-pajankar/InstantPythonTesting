@@ -1,0 +1,15 @@
+pi@raspberrypi ~/book/code/chapter03/test $ python test_Module01.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+OK
+pi@raspberrypi ~/book/code/chapter03/test $ python test_Module01.py -v
+test_Module01.test_case01 ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+OK
+pi@raspberrypi ~/book/code/chapter03/test $
+

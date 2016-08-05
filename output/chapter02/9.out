@@ -1,0 +1,35 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python -m unittest -h
+Usage: python -m unittest [options] [tests]
+
+Options:
+  -h, --help       Show this message
+  -v, --verbose    Verbose output
+  -q, --quiet      Minimal output
+  -f, --failfast   Stop on first failure
+  -c, --catch      Catch control-C and display results
+  -b, --buffer     Buffer stdout and stderr during test runs
+
+Examples:
+  python -m unittest test_module               - run tests from test_module
+  python -m unittest module.TestClass          - run tests from module.TestClass
+  python -m unittest module.Class.test_method  - run specified test method
+
+[tests] can be a list of any number of test modules, classes and test
+methods.
+
+Alternative Usage: python -m unittest discover [options]
+
+Options:
+  -v, --verbose    Verbose output
+  -f, --failfast   Stop on first failure
+  -c, --catch      Catch control-C and display results
+  -b, --buffer     Buffer stdout and stderr during test runs
+  -s directory     Directory to start discovery ('.' default)
+  -p pattern       Pattern to match test files ('test*.py' default)
+  -t directory     Top level directory of project (default to
+                   start directory)
+
+For test discovery all test modules must be importable from the top
+level directory of the project.
+
+

@@ -1,0 +1,5 @@
+pi@raspberrypi ~/book/code/chapter03 $ sudo apt-get install python-pip
+pi@raspberrypi ~/book/code/chapter03 $ sudo pip install pytest
+pi@raspberrypi ~/book/code/chapter03 $ py.test --version
+This is pytest version 2.9.2, imported from /usr/local/lib/python2.7/dist-packages/pytest.pyc
+

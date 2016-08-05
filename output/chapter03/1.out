@@ -1,0 +1,18 @@
+pi@raspberrypi ~/book/code/chapter03 $ sudo apt-get install python-pip
+pi@raspberrypi ~/book/code/chapter03/test $ sudo pip install nose
+Downloading/unpacking nose
+  Running setup.py egg_info for package nose
+
+    no previously-included directories found matching 'doc/.build'
+Installing collected packages: nose
+  Running setup.py install for nose
+
+    no previously-included directories found matching 'doc/.build'
+    Installing nosetests script to /usr/local/bin
+    Installing nosetests-2.7 script to /usr/local/bin
+Successfully installed nose
+Cleaning up...
+
+pi@raspberrypi ~/book/code/chapter03/test $ nosetests -V
+nosetests version 1.3.7
+

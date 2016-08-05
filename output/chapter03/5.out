@@ -1,0 +1,37 @@
+pi@raspberrypi ~/book/code/chapter03 $ tree
+.
+├── mypackage
+│   ├── __init__.py
+│   ├── mymathlib.py
+│   └── mymathsimple.py
+└── test
+    ├── __init__.py
+    ├── test_Module01.py
+    ├── test_Module02.py
+    └── test_Module03.py
+
+2 directories, 7 files
+pi@raspberrypi ~/book/code/chapter03 $ nosetests test/test_Module03.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+pi@raspberrypi ~/book/code/chapter03 $ nosetests test.test_Module03
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+pi@raspberrypi ~/book/code/chapter03 $ nosetests test.test_Module03:TestClass01
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+pi@raspberrypi ~/book/code/chapter03 $ nosetests test.test_Module03:TestClass01.test_case01   .
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+

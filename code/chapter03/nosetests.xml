@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="1" skip="0"><testcase classname="test.test_Module08" name="test_case01" time="0.002"></testcase><testcase classname="test.test_Module08" name="test_case02" time="0.002"><failure type="exceptions.AssertionError" message="test_case02() did not raise Exception"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/usr/local/lib/python2.7/dist-packages/nose/tools/nontrivial.py", line 67, in newfunc
+    raise AssertionError(message)
+AssertionError: test_case02() did not raise Exception
+]]></failure></testcase></testsuite>

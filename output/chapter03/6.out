@@ -1,0 +1,11 @@
+pi@raspberrypi ~/book/code/chapter03 $ nosetests -v
+test.test_Module01.test_case01 ... ok
+test.test_Module02.test_case01 ... ok
+test.test_Module03.TestClass01.test_case01 ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.037s
+
+OK
+pi@raspberrypi ~/book/code/chapter03 $
+

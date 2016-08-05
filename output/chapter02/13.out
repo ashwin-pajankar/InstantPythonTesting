@@ -1,0 +1,48 @@
+pi@raspberrypi ~/book/code/chapter02/test $ cd ..
+pi@raspberrypi ~/book/code/chapter02 $ mkdir mypackage
+pi@raspberrypi ~/book/code/chapter02 $ cd mypackage
+pi@raspberrypi ~/book/code/chapter02 $ pwd
+/home/pi/book/code/chapter02
+pi@raspberrypi ~/book/code/chapter02 $ tree
+.
+├── mypackage
+│   ├── __init__.py
+│   ├── mymathlib.py
+│   └── mymathsimple.py
+└── test
+    ├── __init__.py
+    ├── test_me.py
+    ├── test_Module01.py
+    ├── test_Module02.py
+    ├── test_Module03.py
+    ├── test_Module04.py
+    ├── test_Module05.py
+    ├── test_Module06.py
+    ├── test_Module07.py
+    └── test_Module08.py
+
+2 directories, 13 files
+
+pi@raspberrypi ~/book/code/chapter02 $ python -m unittest -v test.test_Module09
+In setUpModule()...
+Creating object for the class : mymathlib
+In setUpClass()...
+test_case01 (test.test_Module09.TestClass10) ...
+In setUp()...
+In test_case01()
+In tearDown()...
+ok
+test_case02 (test.test_Module09.TestClass10) ...
+In setUp()...
+In test_case02()
+In tearDown()...
+ok
+In tearDownClass()...
+In tearDownModule()...
+Destroying object for the class : mymathlib
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+

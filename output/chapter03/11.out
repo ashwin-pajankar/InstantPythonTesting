@@ -1,0 +1,31 @@
+pi@raspberrypi ~/book/code/chapter03 $ nosetests -v test.test_Module07
+test.test_Module07.test_case01 ... ok
+test.test_Module07.test_case02 ... ok
+test.test_Module07.test_case03 ... FAIL
+test.test_Module07.test_case04 ... FAIL
+
+======================================================================
+FAIL: test.test_Module07.test_case03
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/pi/book/code/chapter03/test/test_Module07.py", line 13, in test_case03
+    ok_(2+2 == 5, msg="Test Case Failure...")
+AssertionError: Test Case Failure...
+
+======================================================================
+FAIL: test.test_Module07.test_case04
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/pi/book/code/chapter03/test/test_Module07.py", line 17, in test_case04
+    eq_(2+2, 5, msg="Test Case Failure...")
+AssertionError: Test Case Failure...
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+FAILED (failures=2)
+

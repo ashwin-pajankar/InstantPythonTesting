@@ -1,0 +1,40 @@
+pi@raspberrypi ~/book/code/chapter02 $ nosetests -v
+test_case01 (test.test_Module01.TestClass01) ... ok
+test_case02 (test.test_Module01.TestClass01) ... ok
+test_case01 (test.test_Module02.TestClass02) ... ok
+test_case02 (test.test_Module02.TestClass02) ... ok
+test_case01 (test.test_Module03.TestClass03) ... ok
+test_case02 (test.test_Module03.TestClass03) ... ok
+test_case03 (test.test_Module03.TestClass03) ... FAIL
+test_case04 (test.test_Module03.TestClass03) ... FAIL
+test_case01 (test.test_Module04.TestClass04) ... ok
+test_case01 (test.test_Module04.TestClass05) ... ok
+test_case01 (test.test_Module05.TestClass06) ... ok
+test_case02 (test.test_Module05.TestClass06) ... ok
+test_case01 (test.test_Module06.TestClass07) ... ok
+test_case01 (test.test_Module07.TestClass08) ... ok
+test_case02 (test.test_Module07.TestClass08) ... FAIL
+test_case03 (test.test_Module07.TestClass08) ... ok
+.
+.
+.
+.
+.
+
+======================================================================
+FAIL: This is a test method.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/pi/book/code/chapter02/test/test_Module11.py", line 9, in test_case01
+    self.fail()
+AssertionError: None
+-------------------- >> begin captured stdout << ---------------------
+test.test_Module11.TestClass12.test_case01
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.403s
+
+FAILED (SKIP=2, errors=1, failures=4)
+

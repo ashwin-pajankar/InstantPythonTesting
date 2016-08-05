@@ -1,0 +1,26 @@
+pi@raspberrypi ~/book/code/chapter04 $ py.test
+=================================================== test session starts ====================================================
+platform linux2 -- Python 2.7.3, pytest-2.9.2, py-1.4.31, pluggy-0.3.1
+rootdir: /home/pi/book/code/chapter04, inifile:
+collected 4 items
+
+test/test_Module01.py .
+test/test_Module02.py .
+test/test_Module03.py ..
+
+================================================= 4 passed in 0.12 seconds =================================================
+pi@raspberrypi ~/book/code/chapter04 $ py.test -v
+=================================================== test session starts ====================================================
+platform linux2 -- Python 2.7.3, pytest-2.9.2, py-1.4.31, pluggy-0.3.1 -- /usr/bin/python
+cachedir: .cache
+rootdir: /home/pi/book/code/chapter04, inifile:
+collected 4 items
+
+test/test_Module01.py::test_case01 PASSED
+test/test_Module02.py::test_case01 PASSED
+test/test_Module03.py::TestClass01::test_case01 PASSED
+test/test_Module03.py::TestClass01::test_case02 PASSED
+
+================================================= 4 passed in 0.11 seconds =================================================
+pi@raspberrypi ~/book/code/chapter04 $
+

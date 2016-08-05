@@ -1,0 +1,15 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python test_Module04.py
+test_case01 (__main__.TestClass04) ...
+Classname : TestClass04
+Running Test Method : test_case01
+ok
+test_case01 (__main__.TestClass05) ...
+Classname : TestClass05
+Running Test Method : test_case01
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.039s
+
+OK
+

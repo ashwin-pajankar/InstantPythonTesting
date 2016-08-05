@@ -1,0 +1,16 @@
+pi@raspberrypi ~/book/code/chapter04/test $ py.test -s test_Module07.py
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.3, pytest-2.9.2, py-1.4.31, pluggy-0.3.1
+rootdir: /home/pi/book/code/chapter04/test, inifile:
+collected 2 items
+
+test_Module07.py
+In fixture01()...
+I'm the test 1
+.
+In fixture01()...
+I'm the test 2
+.
+
+=========================== 2 passed in 0.05 seconds ===========================
+

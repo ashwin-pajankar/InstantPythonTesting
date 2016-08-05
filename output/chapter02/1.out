@@ -1,0 +1,7 @@
+pi@raspberrypi ~/book/code/chapter02/test $ python test_Module01.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
